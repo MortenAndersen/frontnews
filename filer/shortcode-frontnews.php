@@ -16,11 +16,14 @@ if (have_rows('nyhed', 'option')):
 		echo '<div class="frontnews">';
 		while (have_rows('nyhed', 'option')): the_row();
 
+    // ACF
+
 			$sub_overskrift = get_sub_field('overskrift');
 			$sub_tekst = get_sub_field('brodtekst');
 			$images = get_sub_field('billeder');
       $file = get_sub_field('fil');
-
+    
+      // ACF end
 
       echo '<div class="frontnews-item">';
         if ($sub_overskrift) {
