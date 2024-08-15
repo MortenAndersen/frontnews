@@ -1,0 +1,28 @@
+.frontnews {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.frontnews-item {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.frontnews .frontnews-item_body p {
+  margin: 0 0 0.5rem 0;
+}
+.frontnews-item_body p:last-of-type {
+  margin-bottom: 0;
+}
+.frontnews-item_pic {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.frontnews-item_pic img {
+  width: 100%;
+}
